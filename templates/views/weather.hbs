@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {{>headerlinks}}
+  </head>
+  <body>
+   
+    <!-- main header -->
+   {{>navber}}
+
+
+    <!-- main header  -->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto text-center">
+         
+          <div class="main_content">
+              <form action="" class="temp_form">
+                  <input type="text" name="" id="cityName" placeholder="Enter your city name" autocomplete="off">
+                  <input type="submit" value="search" id="submitBtn">
+              </form>
+          </div>
+
+          <div class="tempInformation">
+              <div class="top_layer">
+                  <p class="day">Sunday</p>
+                  <p class="today_date">8 Nov</p>
+              </div>
+              <div class="main_layer">
+                  <p id="city_name">Get Output Here...</p>
+                  <div class="middle_layer data_hide">
+                      <p class="temp"><span class="tempSpan">0</span> <sup>o</sup>C</p>
+                      <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- footer section -->
+    {{>footer}}
+
+
+    <!-- //script file ------------------------> 
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
